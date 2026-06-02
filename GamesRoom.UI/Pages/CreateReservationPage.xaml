@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamesRoom.UI.Pages.CreateReservationPage"
+             Title="Nová Rezervace">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+
+            <Label
+                Text="Vytvoření rezervace"
+                FontSize="28"
+                FontAttributes="Bold"
+                />
+
+            <Label
+                Text="Tady později bude formulář"
+                FontSize="16"
+                />
+
+           
+
+            <Picker 
+                x:Name="GameSpotPicker"
+                Title="Vyber herní místo"/>
+
+            <DatePicker 
+                x:Name="ReservationDatePicker"
+                />
+
+            <TimePicker 
+                x:Name="StartTimePicker"
+                Time="14:00"/>
+            
+            <TimePicker 
+                x:Name="EndTimePicker"
+                Time="15:00"/>
+
+            <Button 
+                Text="Uložit Rezervaci"
+                Clicked="OnSaveClicked"
+                />
+
+            <Button
+                Text="Zpět na přehled"
+                Clicked="OnBackClicked"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

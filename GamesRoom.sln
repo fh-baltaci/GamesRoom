@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesRoom.Core", "GamesRoom.Core\GamesRoom.Core.csproj", "{BBE54ACF-020A-4118-8334-D28934FF097F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamesRoom.UI", "GamesRoom.UI\GamesRoom.UI.csproj", "{C9AEF7FA-C46F-4A97-AAAC-C3B88B526ED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE54ACF-020A-4118-8334-D28934FF097F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE54ACF-020A-4118-8334-D28934FF097F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE54ACF-020A-4118-8334-D28934FF097F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE54ACF-020A-4118-8334-D28934FF097F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9AEF7FA-C46F-4A97-AAAC-C3B88B526ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9AEF7FA-C46F-4A97-AAAC-C3B88B526ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9AEF7FA-C46F-4A97-AAAC-C3B88B526ED7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C9AEF7FA-C46F-4A97-AAAC-C3B88B526ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9AEF7FA-C46F-4A97-AAAC-C3B88B526ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A1DAAA7-09FA-4E91-8594-E597C82D3B3F}
+	EndGlobalSection
+EndGlobal

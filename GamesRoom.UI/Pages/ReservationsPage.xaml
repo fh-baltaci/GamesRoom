@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamesRoom.UI.Pages.ReservationsPage"
+             Title="GamesRoom">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="16">
+
+            <Label 
+                Text="Přehled Rezervací"
+                FontSize="28"
+                FontAttributes="Bold"
+                />
+
+            <Label
+                Text="Zde bude seznam všech rezervací v GamesRoom"
+                FontSize="16"
+                />
+
+            <CollectionView x:Name="ReservationsCollectionView">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame 
+                            Padding="16"
+                            BorderColor="LightGray"
+                            CornerRadius="12"
+                            Margin="0,0,0,8"
+                            >
+                            
+                            <VerticalStackLayout Spacing="6">
+                                <Label
+                                        Text="{Binding User.Name}"
+                                        FontSize="20"
+                                        FontAttributes="Bold"
+                                        />
+
+                                <Label Text="{Binding GameSpot.Name}"/>
+                                <Label Text="{Binding StartTime}"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+            
+            <Button
+                Text="Vytvořit novou rezervaci"
+                Clicked="OnCreateReservationClicked"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
