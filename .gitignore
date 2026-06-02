@@ -1,0 +1,111 @@
+﻿# ==========================
+# .NET MAUI & .NET Core
+# ==========================
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Tt]est[Rr]esults/
+[Cc]ross[Gg]en/
+[Hh]elp/
+[Ll]og/
+[Ll]ogs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.csproj.DotSettings.user
+*.props.user
+*.targets.user
+.vs/
+.vscode/
+
+# ==========================
+# Balíčky a sestavení
+# ==========================
+project.lock.json
+project.fragment.lock.json
+*.nuget.props
+*.nuget.targets
+[Nn]uget/
+[Pp]ackages/
+packages.config
+!packages/build/
+!packages/*build/
+!packages/buildTransitive/
+!packages/*buildTransitive/
+app.publish/
+pubxml.user
+*.publishproj
+
+# ==========================
+# Databáze a zálohy
+# ==========================
+*.db
+*.sqlite
+*.sdf
+*.suo
+*.user
+*.lock
+
+# ==========================
+# Specifické pro MAUI a Xamarin
+# ==========================
+# Android
+.android/
+.gradle/
+build-tools/
+bin/
+obj/
+*.apk
+*.aab
+*.apks
+*.mдача
+*.apk.idsig
+*.manifest
+[Aa]ssets/dl/
+
+# iOS & Mac
+build/
+Build/
+DerivedData/
+*.app
+*.ipa
+*.dSYM.zip
+*.dSYM/
+*.xcarchive
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+GeneratedFiles/
+frameworks/
+
+# ==========================
+# Windows (WinUI 3 / UWP)
+# ==========================
+x64/
+x86/
+ARM/
+ARM64/
+bld/
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+*.cer
+*.pfx
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+
+# ==========================
+# Ostatní a generované soubory
+# ==========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.pidb
+*.appxupload
+*.suo
+*.user
+*.lock
