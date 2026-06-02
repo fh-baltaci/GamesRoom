@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamesRoom.UI.Pages.LoginPage"
+             Title="Login">
+    <VerticalStackLayout Padding="32" Spacing="16" VerticalOptions="Center">
+        <Label
+            Text="GameRoom"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+        />
+
+        <Label
+            Text="Přihlášení"
+            FontSize="20"
+            HorizontalOptions="Center"
+        />
+
+        <Entry
+            x:Name="UserNameEntry"
+            Placeholder="Uživatelské jméno"
+            />
+
+        <Entry
+            x:Name="PasswordEntry"
+            Placeholder="Heslo"
+            IsPassword="True"
+            />
+
+        <Button
+            Text="Přihlásit se"
+            Clicked="OnLoginClicked"
+            />
+
+
+    </VerticalStackLayout>
+</ContentPage>

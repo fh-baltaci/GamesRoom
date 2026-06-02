@@ -5,6 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using GamesRoom.Core.Models;
+using GamesRoom.Core.Security;
 
 namespace GamesRoom.Core.Data
 {
@@ -16,9 +17,9 @@ namespace GamesRoom.Core.Data
 
         static FakeDatabase()
         {
-            Users.Add(new User(1, "Jan Novák", "honzaGamer123"));
-            Users.Add(new User(2, "Petr Klíč", "petrkey123"));
-            Users.Add(new User(3, "Josef Novák", "jozkagamer"));
+            Users.Add(new User(1, "Jan Novák", "honzaGamer123", PasswordHasher.HashPassword("Admin123")));
+            Users.Add(new User(2, "Petr Klíč", "petrkey123", PasswordHasher.HashPassword("Admin123")));
+            Users.Add(new User(3, "Josef Novák", "jozkagamer", PasswordHasher.HashPassword("Admin123")));
 
             GameSpots.Add(new ConsoleSpot(1, "XBOX #1", 2, "XBOX"));
             GameSpots.Add(new ConsoleSpot(2, "XBOX #2", 2, "XBOX"));

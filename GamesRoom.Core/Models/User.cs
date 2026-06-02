@@ -11,12 +11,14 @@ namespace GamesRoom.Core.Models
         public string Name { get; set; }
         public string Nickname { get; set; }
         public int Id { get; set; }
+        public string PasswordHash { get; set; }
 
-        public User(int id, string name, string nickname)
+        public User(int id, string name, string nickname, string pass)
         {
             this.Id = id;
             this.Name = name;
             this.Nickname = nickname;
+            this.PasswordHash = pass;
         }
     }
 }
