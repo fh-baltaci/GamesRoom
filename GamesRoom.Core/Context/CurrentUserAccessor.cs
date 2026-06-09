@@ -10,9 +10,17 @@ namespace GamesRoom.Core.Context
 {
     public static class CurrentUserAccessor
     {
+
+        private static User _currentUser;
+
         public static User GetCurrentUser()
         {
-            return FakeDatabase.Users.First();
+            return _currentUser;
+        }
+
+        public static void SetCurrentUser(User user)
+        {
+            _currentUser = user;
         }
     }
 }

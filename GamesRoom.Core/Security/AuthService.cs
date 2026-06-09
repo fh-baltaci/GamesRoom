@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GamesRoom.Core.Context;
 using GamesRoom.Core.Data;
 using GamesRoom.Core.Models;
 
@@ -13,7 +14,7 @@ namespace GamesRoom.Core.Security
 
         public static User? Login(string username, string password)
         {
-            User? user = FakeDatabase.Users.First(x => x.Name == username);
+            User? user = FakeDatabase.Users.FirstOrDefault(x => x.Nickname == username);
 
             if (user == null)
             {
@@ -22,7 +23,13 @@ namespace GamesRoom.Core.Security
 
             bool passwordIsValid = VerifyPassword(password, user.PasswordHash);
 
-            return passwordIsValid ? user : null;
+            if (!passwordIsValid)
+            {
+                return null;
+            }
+
+            CurrentUserAccessor.SetCurrentUser(user);
+            return user;
         }
 
         private static bool VerifyPassword(string password, string hash)
